@@ -1,0 +1,147 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+
+\newtheorem{definition}{Definition}
+\newtheorem{theorem}{Theorem}
+
+\begin{document}
+	
+	\title{Lecture 1: Introduction to Graph Theory}
+	\author{Tomás Xavier Somoza Salinas}
+	\date{\today}
+	\maketitle
+	
+	\section{Introduction}
+	Graph theory is a branch of mathematics that studies the properties of graphs. Graphs are mathematical structures used to model pairwise relations between objects from a certain collection. A graph in this context refers to a collection of vertices or 'nodes' and a collection of edges. Each edge connects a pair of vertices.
+	
+	\begin{definition}
+		A \textit{graph} \(G\) is an ordered pair \(G := (V, E)\) comprising a set \(V\) of vertices or nodes together with a set \(E\) of edges or arcs. Each edge is a 2-element subset of \(V\).
+	\end{definition}
+	
+	\section{Basic Concepts}
+	
+	\subsection{Vertices and Edges}
+	The vertex set of \(G\), denoted by \(V(G)\), can be finite or infinite, and it can be empty. Similarly, the edge set of \(G\), denoted by \(E(G)\), can also be finite, infinite, or empty.
+	
+	\begin{definition}
+		Two vertices are called \textit{adjacent} (or \textit{neighbors}) if they are endpoints of the same edge, and the edge is called \textit{incident} with the vertices.
+	\end{definition}
+	
+	\subsection{Degree}
+	The \textit{degree} of a vertex in a graph is the number of edges incident to it.
+	
+	\begin{definition}
+		The \textit{degree} of a vertex \(v\), denoted by \(deg(v)\), is the number of edges incident to it, with loops counted twice.
+	\end{definition}
+	
+\begin{theorem}
+	\textbf{Handshaking Theorem}: In any graph, the sum of the degrees of all the vertices is equal to twice the number of edges.
+\end{theorem}
+
+\begin{proof}
+	Each edge contributes exactly 2 to the total degree count, one for each endpoint. Hence, the sum of the degrees of all the vertices is twice the number of edges.
+\end{proof}
+
+\section{Types of Graphs}
+
+\subsection{Null Graph}
+A null graph is a graph with no edges, meaning that no vertex is adjacent to any other vertex.
+
+\begin{definition}
+	A \textit{null graph} is a graph where the edge set \(E\) is empty.
+\end{definition}
+
+\subsection{Trivial Graph}
+A trivial graph is a graph with only one vertex.
+
+\begin{definition}
+	A \textit{trivial graph} is a graph which contains only one vertex and no edges.
+\end{definition}
+
+\subsection{Non-Trivial Graph}
+Any graph which is not a trivial graph is called a non-trivial graph.
+
+\begin{definition}
+	A \textit{non-trivial graph} is a graph which contains more than one vertex.
+\end{definition}
+
+\subsection{Simple Graph}
+A simple graph is a graph with no loops and no parallel edges.
+
+\begin{definition}
+	A \textit{simple graph} is a graph in which each edge connects two different vertices and where no two edges connect the same pair of vertices.
+\end{definition}
+
+\subsection{Multigraph}
+A multigraph is a graph which is permitted to have multiple edges, also called parallel edges.
+
+\begin{definition}
+	A \textit{multigraph} is a graph which may have multiple edges, i.e., edges that have the same end nodes. Thus, two vertices may be connected by more than one edge.
+\end{definition}
+
+\subsection{Pseudograph}
+A pseudograph is a graph which is permitted to have loops, which are edges that connect a vertex to itself.
+
+\begin{definition}
+	A \textit{pseudograph} is a graph which may have multiple edges and loops.
+\end{definition}
+
+\subsection{Bipartite Graph}
+A bipartite graph is a graph whose vertices can be divided into two disjoint sets such that every edge connects a vertex in one set to a vertex in the other set.
+
+\begin{definition}
+	A \textit{bipartite graph} is a graph whose vertex set can be partitioned into two disjoint sets \(U\) and \(V\) such that every edge connects a vertex in \(U\) to one in \(V\).
+\end{definition}
+
+\subsection{Complete Graph}
+A complete graph is a simple graph in which every pair of distinct vertices is connected by a unique edge.
+
+\begin{definition}
+	A \textit{complete graph} on \(n\) vertices, denoted by \(K_n\), is a simple graph in which every pair of distinct vertices is connected by a unique edge.
+\end{definition}
+
+
+
+\subsection{Subgraph}
+A subgraph is a graph formed from a subset of the vertices and a subset of the edges of a graph.
+
+\begin{definition}
+	A \textit{subgraph} \(S\) of a graph \(G\) is a graph whose set of vertices and set of edges are all subsets of \(G\).
+\end{definition}
+
+\subsection{Walk, Path, and Cycle}
+A walk in a graph is a finite or infinite sequence of edges which joins a sequence of vertices. A path is a walk in which all vertices (and hence all edges) are distinct. A cycle in a graph is a non-empty trail in which the only repeated vertices are the first and last vertices.
+
+\begin{definition}
+	A \textit{walk} in a graph is a sequence of vertices and edges, \(v_0, e_1, v_1, e_2, v_2, \ldots, e_k, v_k\), where each edge \(e_i\) is incident with the vertices \(v_{i-1}\) and \(v_i\). A \textit{path} is a walk in which all vertices are distinct. A \textit{cycle} is a path with at least one edge, whose first and last vertices are the same.
+\end{definition}
+
+\subsection{Connected and Disconnected Graphs}
+A graph is said to be connected if there is a path between every pair of vertices. In a connected graph, there are no unreachable vertices. A graph that is not connected is disconnected.
+
+\begin{definition}
+	A \textit{connected graph} is a graph in which there is a path from any vertex to any other vertex. A \textit{disconnected graph} is a graph in which there exists at least two vertices between which there is no path.
+\end{definition}
+
+
+\subsection{Graph Isomorphism}
+Two graphs which contain the same number of graph vertices connected in the same way are said to be isomorphic.
+
+\begin{definition}
+	Two graphs \(G\) and \(H\) are said to be \textit{isomorphic} if there is a bijection \(f: V(G) \rightarrow V(H)\) such that any two vertices \(u\) and \(v\) of \(G\) are adjacent in \(G\) if and only if \(f(u)\) and \(f(v)\) are adjacent in \(H\).
+\end{definition}
+
+\subsection{Planar Graph}
+A planar graph is a graph that can be embedded in the plane, i.e., it can be drawn on the plane in such a way that its edges intersect only at their endpoints.
+
+\begin{definition}
+	A \textit{planar graph} is a graph that can be drawn in the plane without any edge crossings, except at the vertices.
+\end{definition}
+
+\section{Conclusion}
+This concludes our first lecture on Graph Theory. We have introduced the basic concepts and terminologies used in Graph Theory. In the next lecture, we will delve deeper into these concepts and explore more advanced topics.
+
+\end{document}
+

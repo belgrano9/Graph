@@ -1,0 +1,122 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+
+\newtheorem{definition}{Definition}
+\newtheorem{theorem}{Theorem}
+
+\begin{document}
+	
+	\title{Lecture 2: Introduction to Spectral Graph Theory}
+	\author{Tomás Xavier Somoza Salinas}
+	\date{\today}
+	\maketitle
+	
+	\section{Introduction}
+	Spectral Graph Theory studies the properties of a graph in relation to the characteristic polynomial, eigenvalues, and eigenvectors of matrices associated with the graph, such as its adjacency matrix or Laplacian matrix.
+	
+	\section{Basic Concepts}
+	
+	\subsection{Adjacency Matrix}
+	The adjacency matrix of a simple labeled graph is a matrix with rows and columns labeled by graph vertices, with a 1 or 0 in position according to whether \(v_i\) and \(v_j\) are adjacent or not.
+	
+	\begin{definition}
+		The \textit{adjacency matrix} \(A\) of a graph \(G\) with \(n\) vertices is a \(n \times n\) matrix where the entry \(a_{ij}\) is 1 if there is an edge between vertices \(i\) and \(j\), and 0 otherwise.
+	\end{definition}
+	
+	\subsection{Laplacian Matrix}
+	The Laplacian matrix, also called the admittance matrix, Kirchhoff matrix or discrete Laplacian, is a matrix representation of a graph.
+	
+	\begin{definition}
+		The \textit{Laplacian matrix} \(L\) of a graph is defined as \(L = D - A\), where \(D\) is the degree matrix and \(A\) is the adjacency matrix of the graph.
+	\end{definition}
+	
+\subsection{Degree Matrix}
+The degree matrix is a diagonal matrix which contains information about the degree of each vertex—that is, the number of edges attached to each vertex.
+
+\begin{definition}
+	The \textit{degree matrix} \(D\) of a graph is a diagonal matrix where the diagonal entry \(d_{ii}\) is the degree of vertex \(i\).
+\end{definition}
+
+\subsection{Eigenvalues and Eigenvectors}
+Eigenvalues and eigenvectors of a graph give valuable insights into the structure of the graph.
+
+\begin{definition}
+	The \textit{eigenvalues} of a graph are the eigenvalues of its adjacency matrix. An \textit{eigenvector} corresponding to an eigenvalue is any non-zero vector that satisfies the equation \(Av = \lambda v\), where \(A\) is the adjacency matrix, \(\lambda\) is the eigenvalue, and \(v\) is the eigenvector.
+\end{definition}
+
+\subsection{Spectrum of a Graph}
+The spectrum of a graph is the multiset of the eigenvalues of the adjacency matrix of the graph.
+
+\begin{definition}
+	The \textit{spectrum} of a graph is the set of eigenvalues of its adjacency matrix, each repeated according to its multiplicity.
+\end{definition}
+
+\subsection{Spectral Properties and Graph Invariants}
+Spectral properties of graphs provide a powerful tool to prove results about graphs and graph invariants.
+
+\begin{definition}
+	A \textit{graph invariant} is a property of a graph that is not changed by graph isomorphisms. Examples of graph invariants include the spectrum, the number of vertices, the number of edges, the degree sequence, etc.
+\end{definition}
+
+\subsection{Spectral Radius}
+The spectral radius of a graph is the largest absolute value of its eigenvalues.
+
+\begin{definition}
+	The \textit{spectral radius} of a graph is the largest absolute value of the eigenvalues of its adjacency matrix.
+\end{definition}
+
+\subsection{Spectral Graph Drawing}
+Spectral graph drawing uses the eigenvectors of matrices associated with the graph to position the vertices in the plane or in the space.
+
+\begin{definition}
+	\textit{Spectral graph drawing} is a method of coordinate assignment to the vertices of a graph using the eigenvectors of matrices derived from the graph, such as the Laplacian matrix.
+\end{definition}
+
+\subsection{Spectral Clustering}
+Spectral clustering techniques make use of the spectrum (eigenvalues) of the similarity matrix of the data to perform dimensionality reduction before clustering in fewer dimensions.
+
+\begin{definition}
+	\textit{Spectral clustering} is a technique which uses the eigenvectors of the Laplacian matrix of a graph to find a partition of the graph into clusters.
+\end{definition}
+
+\subsection{Spectral Graph Partitioning}
+Spectral graph partitioning methods use information from the eigenvectors of the Laplacian matrix to partition the vertices of the graph into disjoint sets.
+
+\begin{definition}
+	\textit{Spectral graph partitioning} is a method to partition a graph into disjoint sets of vertices based on the eigenvectors of its Laplacian matrix.
+\end{definition}
+
+\subsection{Cheeger's Inequality}
+Cheeger's Inequality relates the algebraic connectivity (the second smallest eigenvalue of the Laplacian matrix) of a graph to its isoperimetric number, providing a bound on the quality of the graph partitioning.
+
+\begin{theorem}
+	\textbf{Cheeger's Inequality for Graphs}: Let \(G\) be a finite, connected, undirected graph, and let \(\lambda\) be the second smallest eigenvalue of its Laplacian. Then, the isoperimetric number \(h(G)\) of \(G\) satisfies
+	\[
+	\frac{\lambda}{2} \leq h(G) \leq \sqrt{2 \lambda}.
+	\]
+\end{theorem}
+
+\subsection{Expander Graphs}
+Expander graphs are sparse graphs that have strong connectivity properties, quantified using eigenvalues of matrices associated with the graph.
+
+\begin{definition}
+	An \textit{expander graph} is a sparse graph that has strong connectivity properties, in the sense that a small set of vertices has a large neighborhood. More formally, a graph is an expander if the second largest absolute value of its adjacency matrix's eigenvalues is small.
+\end{definition}
+
+\subsection{Spectral Gap}
+The spectral gap of a graph is the difference between the largest and second largest eigenvalue of its adjacency matrix.
+
+\begin{definition}
+	The \textit{spectral gap} of a graph is the difference between the largest and second largest eigenvalue of its adjacency matrix.
+\end{definition}
+
+\section{Conclusion}
+This concludes our second lecture on Spectral Graph Theory. We have introduced the basic concepts and terminologies used in Spectral Graph Theory. In the next lecture, we will delve deeper into these concepts and explore more advanced topics.
+
+\end{document}
+
+
+
+

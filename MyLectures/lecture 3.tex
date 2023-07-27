@@ -1,0 +1,119 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+
+\newtheorem{definition}{Definition}
+\newtheorem{theorem}{Theorem}
+
+\begin{document}
+	
+	\title{Lecture 3: Introduction to Graph Coloring}
+	\author{Tomás Xavier Somoza Salinas}
+	\date{\today}
+	\maketitle
+	
+	\section{Introduction}
+	Graph coloring is a method to assign colors to the vertices of a graph \(G\) such that no two adjacent vertices have the same color. Graph coloring is a special case of graph labeling; it is an assignment of labels traditionally called "colors" to vertices of a graph \(G\).
+	
+	\section{Basic Concepts}
+	
+	\subsection{Vertex Coloring}
+	The assignment of labels, called colors, to vertices of a graph \(G\) such that no two adjacent vertices have the same color is called a vertex coloring.
+	
+	\begin{definition}
+		A \textit{vertex coloring} is an assignment of labels (or colors) to the vertices of a graph \(G\) such that no two adjacent vertices have the same color.
+	\end{definition}
+	
+	\subsection{Edge Coloring}
+	An edge coloring of a graph is a coloring of the edges such that no two adjacent edges share the same color.
+	
+	\begin{definition}
+		An \textit{edge coloring} is an assignment of labels (or colors) to the edges of a graph \(G\) such that no two adjacent edges have the same color.
+	\end{definition}
+	
+\subsection{Chromatic Number}
+The chromatic number of a graph is the smallest number of colors needed to color the vertices of \(G\) so that no two adjacent vertices share the same color.
+
+\begin{definition}
+	The \textit{chromatic number} of a graph \(G\), denoted \(\chi(G)\), is the smallest number of colors needed to color the vertices of \(G\) so that no two adjacent vertices share the same color.
+\end{definition}
+
+\subsection{Chromatic Index}
+The chromatic index of a graph is the smallest number of colors needed to color the edges of \(G\) so that no two adjacent edges share the same color.
+
+\begin{definition}
+	The \textit{chromatic index} of a graph \(G\), denoted \(\chi'(G)\), is the smallest number of colors needed to color the edges of \(G\) so that no two adjacent edges share the same color.
+\end{definition}
+
+\subsection{Coloring Algorithms}
+There are several algorithms that can produce a coloring of a graph, either as an exact solution, or as an approximation for NP-hard problems.
+
+\begin{definition}
+	A \textit{coloring algorithm} is an algorithm that assigns labels (traditionally called "colors") to the vertices of a graph \(G\) such that no two adjacent vertices have the same color.
+\end{definition}
+
+\subsection{Greedy Coloring}
+Greedy coloring is a simple coloring algorithm that assigns colors to vertices one by one, choosing the smallest available color.
+
+\begin{definition}
+	\textit{Greedy coloring} is a coloring method that colors vertices one by one, assigning each vertex the smallest available color.
+\end{definition}
+
+\subsection{Welsh-Powell Algorithm}
+The Welsh-Powell algorithm is an efficient algorithm to color a graph, based on greedy coloring.
+
+\begin{definition}
+	The \textit{Welsh-Powell algorithm} is a modification of the greedy coloring algorithm where the ordering of the vertices to be colored is done by non-increasing degrees.
+\end{definition}
+
+\subsection{Four Color Theorem}
+The four color theorem states that any map in a plane can be colored using four-colors in such a way that regions sharing a common boundary (other than a single point) do not share the same color.
+
+\begin{theorem}
+	\textbf{Four Color Theorem}: Every planar graph can be colored with at most four colors.
+\end{theorem}
+
+\subsection{Five Color Theorem}
+The five color theorem is a result from graph theory that given a plane separated into regions, such as a political map of the counties of a state, the regions may be colored using no more than five colors in such a way that no two adjacent regions receive the same color.
+
+\begin{theorem}
+	\textbf{Five Color Theorem}: Every planar graph can be colored with at most five colors.
+\end{theorem}
+
+\subsection{Coloring and Chromatic Polynomials}
+The chromatic polynomial counts the number of ways a graph can be colored.
+
+\begin{definition}
+	The \textit{chromatic polynomial} \(P_G(k)\) of a graph \(G\) is a polynomial that counts the number of proper colorings of \(G\) with exactly \(k\) colors.
+\end{definition}
+
+\subsection{Graph Coloring Applications}
+Graph coloring is used in a variety of practical applications, from scheduling to register allocation.
+
+\begin{definition}
+	\textit{Graph coloring applications}: Graph coloring is used in a variety of applications, including scheduling (assigning tasks to workers), frequency assignment (assigning frequencies to radio stations), and register allocation (assigning registers to variables in computer science).
+\end{definition}
+
+\subsection{Perfect Graphs}
+A perfect graph is a graph in which the chromatic number of every induced subgraph equals the size of the largest clique of that subgraph.
+
+\begin{definition}
+	A \textit{perfect graph} is a graph in which the chromatic number of every induced subgraph equals the order of the largest clique of that subgraph.
+\end{definition}
+
+\subsection{Graph Coloring Problems}
+Graph coloring problems include determining the chromatic number or chromatic index of a graph, or determining whether a graph can be colored in a certain way.
+
+\begin{definition}
+	\textit{Graph coloring problems} are computational problems associated with coloring the vertices or edges of a graph in certain ways, often with constraints on the colors of adjacent vertices or edges.
+\end{definition}
+
+\section{Conclusion}
+This concludes our third lecture on Graph Coloring. We have introduced the basic concepts and terminologies used in Graph Coloring. In the next lecture, we will delve deeper into these concepts and explore more advanced topics.
+
+\end{document}
+
+
+
+
