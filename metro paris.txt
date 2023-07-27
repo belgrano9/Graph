@@ -1,0 +1,100 @@
+Station of Depart        |  Station of Arrival       |  Line Number
+-------------------------------------------------------------------
+La Défense               |  Esplanade de La Défense  |  1
+Esplanade de La Défense  |  Pont de Neuilly          |  1
+Pont de Neuilly          |  Les Sablons              |  1
+Les Sablons              |  Porte Maillot            |  1
+Porte Maillot            |  Argentine                |  1
+Argentine                |  Charles de Gaulle – Étoile |  1
+Charles de Gaulle – Étoile |  George V              |  1
+George V                 |  Franklin D. Roosevelt    |  1
+Franklin D. Roosevelt    |  Champs-Élysées – Clemenceau |  1
+Champs-Élysées – Clemenceau |  Concorde           |  1
+Concorde                 |  Tuileries                |  1
+Tuileries                |  Palais Royal – Musée du Louvre |  1
+Palais Royal – Musée du Louvre |  Louvre – Rivoli |  1
+Louvre – Rivoli          |  Châtelet                 |  1
+Châtelet                 |  Hôtel de Ville           |  1
+Hôtel de Ville           |  Saint-Paul               |  1
+Saint-Paul               |  Bastille                 |  1
+Bastille                 |  Gare de Lyon             |  1
+Gare de Lyon             |  Reuilly – Diderot        |  1
+Reuilly – Diderot        |  Nation                   |  1
+Nation                   |  Porte de Vincennes       |  1
+Porte de Vincennes       |  Saint-Mandé              |  1
+Saint-Mandé              |  Bérault                  |  1
+Bérault                  |  Château de Vincennes     |  1
+Porte Dauphine           |  Victor Hugo              |  2
+Victor Hugo              |  Charles de Gaulle – Étoile |  2
+Charles de Gaulle – Étoile |  Ternes                 |  2
+Ternes                   |  Courcelles               |  2
+Courcelles               |  Monceau                  |  2
+Monceau                  |  Villiers                 |  2
+Villiers                 |  Rome                     |  2
+Rome                     |  Place de Clichy          |  2
+Place de Clichy          |  Blanche                  |  2
+Blanche                  |  Pigalle                  |  2
+Pigalle                  |  Anvers                   |  2
+Anvers                   |  Barbès – Rochechouart    |  2
+Barbès – Rochechouart    |  La Chapelle              |  2
+La Chapelle              |  Stalingrad               |  2
+Stalingrad               |  Jaurès                   |  2
+Jaurès                   |  Colonel Fabien           |  2
+Colonel Fabien           |  Belleville               |  2
+Belleville               |  Couronnes                |  2
+Couronnes                |  Ménilmontant             |  2
+Ménilmontant             |  Père Lachaise            |  2
+Père Lachaise            |  Philippe Auguste         |  2
+Philippe Auguste         |  Alexandre Dumas          |  2
+Alexandre Dumas          |  Avron                    |  2
+Avron                    |  Nation                   |  2
+Pont de Levallois – Bécon |  Anatole France         |  3
+Anatole France           |  Louise Michel           |  3
+Louise Michel            |  Porte de Champerret     |  3
+Porte de Champerret      |  Pereire                 |  3
+Pereire                  |  Wagram                  |  3
+Wagram                   |  Malesherbes             |  3
+Malesherbes              |  Villiers                |  3
+Villiers                 |  Europe                  |  3
+Europe                   |  Saint-Lazare            |  3
+Saint-Lazare             |  Havre – Caumartin       |  3
+Havre – Caumartin        |  Opéra                   |  3
+Opéra                    |  Quatre Septembre        |  3
+Quatre Septembre         |  Bourse                  |  3
+Bourse                   |  Sentier                 |  3
+Sentier                  |  Réaumur – Sébastopol    |  3
+Réaumur – Sébastopol     |  Arts et Métiers         |  3
+Arts et Métiers          |  Temple                  |  3
+Temple                   |  République              |  3
+République               |  Parmentier              |  3
+Parmentier               |  Rue Saint-Maur          |  3
+Rue Saint-Maur           |  Père Lachaise           |  3
+Père Lachaise            |  Gambetta                |  3
+Gambetta                 |  Porte de Bagnolet       |  3
+Porte de Bagnolet        |  Gallieni                |  3
+Porte de Clignancourt    |  Simplon                 |  4
+Simplon                  |  Marcadet – Poissonniers |  4
+Marcadet – Poissonniers  |  Château Rouge           |  4
+Château Rouge            |  Barbès – Rochechouart   |  4
+Barbès – Rochechouart    |  Gare du Nord            |  4
+Gare du Nord             |  Gare de l'Est           |  4
+Gare de l'Est            |  Château d'Eau           |  4
+Château d'Eau            |  Strasbourg – Saint-Denis |  4
+Strasbourg – Saint-Denis |  Réaumur – Sébastopol    |  4
+Réaumur – Sébastopol     |  Étienne Marcel          |  4
+Étienne Marcel           |  Les Halles              |  4
+Les Halles               |  Châtelet                |  4
+Châtelet                 |  Cité                    |  4
+Cité                     |  Saint-Michel            |  4
+Saint-Michel             |  Odéon                   |  4
+Odéon                    |  Saint-Germain-des-Prés  |  4
+Saint-Germain-des-Prés   |  Saint-Sulpice           |  4
+Saint-Sulpice            |  Saint-Placide           |  4
+Saint-Placide            |  Montparnasse – Bienvenüe |  4
+Montparnasse – Bienvenüe |  Vavin                   |  4
+Vavin                    |  Raspail                 |  4
+Raspail                  |  Denfert-Rochereau       |  4
+Denfert-Rochereau        |  Mouton-Duvernet         |  4
+Mouton-Duvernet          |  Alésia                  |  4
+Alésia                   |  Porte d'Orléans         |  4
+
